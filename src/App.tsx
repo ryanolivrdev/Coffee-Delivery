@@ -1,6 +1,10 @@
-export function App() {
+import { GlobalContext } from "./contexts/GlobalContext";
+import { Router } from "./routes";
 
+export function App() {
   return (
-    <h1>Hello World</h1>
-  )
+    <GlobalContext>
+      <Router />
+    </GlobalContext>
+  );
 }
