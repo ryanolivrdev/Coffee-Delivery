@@ -6,13 +6,30 @@ export const NavbarContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   position: sticky;
+  top: 0;
+  z-index: 999;
 
   height: 104px;
 
-  padding: 2rem 0;
-
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
+
+  padding: 2rem 160px;
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    padding: 0 70px;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 600px) {
+    padding: 0 40px;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    padding: 0 20px;
+  }
 `;
 
 export const MenuWrapper = styled.nav`
@@ -32,7 +49,7 @@ export const MenuWrapper = styled.nav`
     background-color: ${({ theme }) => theme["yellow-100"]};
     color: ${({ theme }) => theme["yellow-700"]};
   }
-`
+`;
 
 export const LocationContainer = styled.div`
   display: flex;
@@ -53,7 +70,7 @@ export const LocationContainer = styled.div`
     color: ${({ theme }) => theme["purple-700"]};
     font-size: 0.875rem;
   }
-`
+`;
 
 export const Counter = styled.div`
   display: flex;
@@ -62,7 +79,6 @@ export const Counter = styled.div`
   position: absolute;
   right: -8.35px;
   top: -8px;
-
 
   min-width: 1.25rem;
   min-height: 1.25rem;
@@ -73,5 +89,4 @@ export const Counter = styled.div`
   color: ${({ theme }) => theme["white"]};
 
   background-color: ${({ theme }) => theme["yellow-700"]};
-`
-
+`;
