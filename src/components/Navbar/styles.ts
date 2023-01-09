@@ -18,17 +18,17 @@ export const NavbarContainer = styled.header`
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (max-width: 768px) {
-    padding: 0 70px;
+    padding: 2rem 70px;
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (max-width: 600px) {
-    padding: 0 40px;
+    padding: 2rem 40px;
   }
 
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
-    padding: 0 20px;
+    padding: 2rem 20px;
   }
 `;
 
