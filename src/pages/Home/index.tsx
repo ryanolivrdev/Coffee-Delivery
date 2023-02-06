@@ -1,7 +1,8 @@
-import { HeaderWrapper, HomeContainer, HomeWrapper, Item, ItemsWrapper, TextField } from "./styles";
+import { HeaderWrapper, HomeContainer, HomeWrapper, Item, ItemsWrapper, StoreWrapper, TextField } from "./styles";
 
 import coffeImage from '../../assets/coffee-image.png'
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
+import { CoffeeCard } from "../../components/CoffeeCard";
 
 export function Home() {
   return (
@@ -47,6 +48,11 @@ export function Home() {
       <img src={coffeImage} alt="" />
       </HomeWrapper>
 
+      <StoreWrapper>
+        <h2>Nossos cafés</h2>
+
+        <CoffeeCard />
+      </StoreWrapper>
     </HomeContainer>
   )
 }

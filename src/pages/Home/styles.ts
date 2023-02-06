@@ -113,3 +113,31 @@ export const Item = styled.div<ItemProps>`
     background-color: ${({ color }) => color};
   }
 `;
+
+export const StoreWrapper = styled.div`
+
+  padding: 2rem 160px;
+
+  h2 {
+    font-family: 'Baloo 2';
+    font-weight: 800;
+    font-size: 2rem;
+    color: ${({ theme }) => theme["gray-800"]};
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 2rem 70px;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 600px) {
+    padding: 2rem 40px;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    padding: 2rem 20px;
+  }
+`
+
+export const Heading = styled.h1
